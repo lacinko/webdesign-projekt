@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link href="/styles/hamburgers.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      defer
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8Bit Magazine</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <h1 class="header__logo-text">8Bit Magazine</h1>
+        <img
+          src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png"
+          alt="logo"
+          class="header__logo-img"
+        />
+      </div>
+      <nav class="header__nav">
+        <a href="/index.html" class="header__nav-link">Homepage</a>
+        <a href="/pages/categories.html" class="header__nav-link">Kategórie</a>
+        <a href="/pages/about.html" class="header__nav-link">O nás</a>
+        <a href="/pages/contact.html" class="header__nav-link">Kontakty</a>
+        <div class="header__search-container">
+          <i class="fas fa-search header__search-icon"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="header__search-input"
+          />
+        </div>
+      </nav>
+      <button
+        class="hamburger hamburger--spring nav__btn"
+        type="button"
+        id="nav__btn"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </header>
+    <main class="main">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <article class="hero__swiper-container">
+              <div class="hero__swiper-text">
+                <h2 class="h2">Lorem ipsum dolor sit amet consectetur.</h2>
+                <p class="perex">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi, nostrum.
+                </p>
+              </div>
+              <a href="#" class="hero__swiper-link"
+                ><img
+                  src="https://picsum.photos/902"
+                  alt="post"
+                  class="hero__swiper-img"
+              /></a>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="hero__swiper-container">
+              <div class="hero__swiper-text">
+                <h2 class="h2">Lorem ipsum dolor sit amet.</h2>
+                <p class="perex">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, illum?
+                </p>
+              </div>
+              <a href="#" class="hero__swiper-link"
+                ><img
+                  src="https://picsum.photos/903"
+                  alt="post"
+                  class="hero__swiper-img"
+              /></a>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="hero__swiper-container">
+              <div class="hero__swiper-text">
+                <h2 class="h2">Lorem ipsum dolor sit.</h2>
+                <p class="perex">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, qui.
+                </p>
+              </div>
+              <a href="#" class="hero__swiper-link"
+                ><img
+                  src="https://picsum.photos/900"
+                  alt="post"
+                  class="hero__swiper-img"
+              /></a>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <section class="hero">
+        <article class="hero__left-container">
+          <a href="#" class="hero__left-link"
+            ><img
+              src="https://picsum.photos/902"
+              alt="post"
+              class="hero__left-img"
+          /></a>
+          <div class="hero__left-text">
+            <h2 class="h2"></h2>
+            <p class="perex"></p>
+          </div>
+        </article>
+        <div class="hero__right-container">
+          <article class="hero__right-container">
+            <a href="#" class="hero__right-link"
+              ><img
+                src="https://picsum.photos/903"
+                alt="post"
+                class="hero__right-img"
+            /></a>
+            <div class="hero__right-text">
+              <h2 class="h2"></h2>
+              <p class="perex"></p>
+            </div>
+          </article>
+          <article class="hero__right-container">
+            <a href="#" class="hero__right-link"
+              ><img
+                src="https://picsum.photos/900"
+                alt="post"
+                class="hero__right-img"
+            /></a>
+            <div class="hero__right-text">
+              <h2 class="h2"></h2>
+              <p class="perex"></p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <aside class="most-viewed">
+        <div class="title">Najčítanejšie</div>
+        <ol class="most-viewed__list">
+          <li class="most-viewed__item">
+            <a href="#" class="most-viewed__link"
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              voluptatum dolorem quibusdam!</a
+            >
+          </li>
+          <li class="most-viewed__item">
+            <a href="#" class="most-viewed__link"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores!</a
+            >
+          </li>
+          <li class="most-viewed__item">
+            <a href="#" class="most-viewed__link"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+              blanditiis praesentium.</a
+            >
+          </li>
+          <li class="most-viewed__item">
+            <a href="#" class="most-viewed__link"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate inventore voluptatum ducimus exercitationem.</a
+            >
+          </li>
+          <li class="most-viewed__item">
+            <a href="#" class="most-viewed__link"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              debitis laudantium labore.</a
+            >
+          </li>
+        </ol>
+      </aside>
+      <h3 class="category__title h3">Správy</h3>
+      <section class="category">
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/400"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium dolores laudantium impedit culpa?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/401"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              iure harum, distinctio repellat deserunt placeat consequuntur?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/402"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+              provident, molestias tenetur rerum vel in?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/403"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+              quia dolorem ab molestias laudantium.
+            </p>
+          </a>
+        </article>
+      </section>
+      <h3 class="category__title h3">Zdravie</h3>
+      <section class="category">
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/407"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium dolores laudantium impedit culpa?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/408"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              iure harum, distinctio repellat deserunt placeat consequuntur?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/409"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+              provident, molestias tenetur rerum vel in?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/410"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+              quia dolorem ab molestias laudantium.
+            </p>
+          </a>
+        </article>
+      </section>
+      <h3 class="category__title h3">Tech</h3>
+      <section class="category">
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/412"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium dolores laudantium impedit culpa?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/413"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              iure harum, distinctio repellat deserunt placeat consequuntur?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/414"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+              provident, molestias tenetur rerum vel in?
+            </p>
+          </a>
+        </article>
+        <article class="category__article">
+          <a href="#" class="category__article-link">
+            <img
+              src="https://picsum.photos/415"
+              alt="thumb"
+              class="category__article-img"
+            />
+            <p class="category__article-perex">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+              quia dolorem ab molestias laudantium.
+            </p>
+          </a>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__copyright">Made by CZU Team</div>
+    </footer>
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>
